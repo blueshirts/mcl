@@ -1,0 +1,26 @@
+{
+  "name": "libname",
+  "version": "0.1.0",
+  "devDependencies": {
+    "requirejs": "latest",
+    "bootswatch": "3.3.x"
+  },
+  "dependencies": {
+    "jquery": "latest"
+  },
+  "main": [
+    "build/noShimNoDependencies/mylib.js"
+  ],
+  "ignore": [
+    "server.coffee",
+    "views",
+    "test",
+    "assets",
+    "node_modules",
+    "routes",
+    "makefile",
+    "mimosa-config.coffee",
+    "mimosa-config-commented.coffee",
+    ".bowerrc"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "shims": {
+    "/javascripts/common.js": null
+  },
+  "deps": {
+    "/javascripts/common.js": [],
+    "/javascripts/demo/demo_bind.js": [
+      "jquery",
+      "lib/widget"
+    ],
+    "/javascripts/libname/widget.js": [
+      "jquery"
+    ],
+    "/javascripts/main.js": [
+      "common",
+      "demo/demo_bind"
+    ],
+    "/javascripts/spec/widget_spec.js": [
+      "jquery",
+      "lib/widget"
+    ]
+  },
+  "aliases": {
+    "/javascripts/common.js": {
+      "jquery": "vendor/jquery/jquery",
+      "lib": "libname"
+    }
+  },
+  "mappings": {
+    "/javascripts/common.js": null
+  },
+  "packages": {
+    "/javascripts/common.js": null
+  },
+  "originalConfig": {
+    "paths": {
+      "jquery": "vendor/jquery/jquery",
+      "lib": "libname"
+    }
+  },
+  "requireFiles": [
+    "/javascripts/common.js",
+    "/javascripts/main.js"
+  ]
+}
