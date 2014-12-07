@@ -1,3 +1,5 @@
 require ['common'], ->
-  require ['demo/demo_bind'], (bind) ->
-    bind()
+  require ['apps/DemoApp'], (app) ->
+    app.start()
+
+

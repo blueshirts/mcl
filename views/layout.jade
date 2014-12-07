@@ -3,6 +3,8 @@ html
   head
     title UI Component
 
+    link(rel='stylesheet', href='/stylesheets/vendor/bootswatch/bootstrap.css' + cachebust)
+    //-link(rel='stylesheet', href='/stylesheets/vendor/bootstrap/bootstrap.css' + cachebust)
     link(rel='stylesheet', href='/stylesheets/style.css' + cachebust)
 
     if reload
@@ -16,3 +18,4 @@ html
 
   body
     block content
+      #content-region

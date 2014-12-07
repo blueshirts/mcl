@@ -1,3 +1,4 @@
+
 exports.config =
   modules: [
     'jshint'
@@ -12,17 +13,48 @@ exports.config =
     'bower'
     'coffeescript'
     'stylus'
-    'copy']
+    'copy'
+    'jade'
+  ]
+
+  bower:
+    bowerDir:
+      clean: true
+  copy:
+      mainOverrides:
+        'bootswatch': [
+          'darkly/bootstrap.css'
+        ]
+
+  template:
+    output: [
+       folders:['javascripts/madziki/jade']
+       outputFileName: 'javascripts/madziki/templates'
+    ]
 
   testemRequire:
     mochaSetup:
       globals:["$"]
 
-  # Change these settings to correspond with your component
-  libraryPackage:
-    globalName: "MyLib"
-    name: "mylib.js"
-    main: "lib/widget"
-    removeDependencies: ["jquery"]
+  #
+  # Template settings.
+  #
+  template:
+    output: [
+       folders:['javascripts/mcl/jade']
+       outputFileName: 'javascripts/mcl/jade/templates'
+    ]
 
+  #
+  # Library settings.
+  #
+  libraryPackage:
+    globalName: "MCL"
+    name: "mcl.js"
+    main: "lib/mcl"
+    removeDependencies: [
+      "jquery"
+      "bootswatch"
+      "marionette"
+    ]
 

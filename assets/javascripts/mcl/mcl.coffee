@@ -1,4 +1,6 @@
-define ['jquery'], ($) ->
+define (require) ->
+
+  $ = require 'jquery'
 
   class Widget
     constructor: (@eId) ->
